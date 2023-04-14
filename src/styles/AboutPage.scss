@@ -1,0 +1,270 @@
+.AboutBannerContainer {
+    position: relative;
+    text-align: center;
+
+}
+
+.AboutBanner {
+    width: 100%;
+    position: relative;
+    height: 30vh;
+    object-fit: cover;
+}
+
+.AboutCenteredText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    // color: #;
+
+   
+
+    .about_title {
+        color: #FFFFFF;
+        font-weight: 600;
+    }
+
+    p {
+        // width: 956px;
+        // height: 39px;
+        // left: 306px;
+        // top: 236px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1.2rem;
+        // line-height: 39px;
+        color: hsl(0, 0%, 93%);
+    }
+
+}
+
+
+.title{
+    text-align: center;
+    margin: 2rem 0 1rem 0;
+   
+    padding: 1rem 0;
+    h2{
+        font-weight: 600;
+    }
+    
+}
+.about_cheshire{
+    text-align: justify;
+    width: 80%;
+    margin: 2rem auto;
+
+    .thematic_list{
+        margin: 1rem 0;
+        @media screen and (min-width:768px){
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: 1fr 1fr;
+        }
+        li::before {
+                content: "";
+                display: inline-block;
+                width: 0.5em;
+                height: 0.5em;
+                margin-right: 0.5em;
+                border-radius: 50%;
+                background-color: red;
+        
+            }
+    }
+    .paras {
+        background-color: #f3f3fe;
+        margin-top: 2rem;
+        padding: 2rem 1rem;
+        border-radius: 4px;
+        box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+    }
+}
+
+
+$light_green: #effffa;
+$dark_green: #f54f0d;
+$black: #000000;
+$white: #fff;
+
+
+//Foundation content
+.AboutContainer {
+    width: 80%;
+    margin: auto;
+    // padding-top: 5%;
+}
+
+
+/* facilities Section */
+
+
+.facilities .section-title {
+    margin-bottom: 15px;
+}
+
+.facilities .section-text {
+    margin-bottom: 60px;
+}
+
+.facilities-wrapper:not(:last-child) {
+    margin-bottom: 80px;
+}
+
+.facilities-banner {
+    margin-top: 5%;
+}
+
+.facilities-banner img {
+    width: 100%;
+    height: auto;
+}
+
+.facilities-content-subtitle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: var(--fs-5);
+    color: var(--eerie-black);
+    margin-bottom: 20px;
+}
+
+.facilities-content-subtitle ion-icon {
+    color: var(--majorelle-blue);
+    font-size: 20px;
+}
+
+.facilities-content-title {
+    font-size: 28px;
+    font-family: "Mulish", sans-serif;
+    color: hsl(245, 17%, 27%);
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.facilities-content-title strong {
+    font-weight: var(--fw-700);
+    background-image: linear-gradient(0deg, #f54f0d, #f54f0d);
+    background-size: 3px 100%;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    padding-left: 10px;
+
+}
+
+.facilities-content-text {
+    font-size: var(--fs-6);
+    color: var(--cool-gray);
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.facilities-list {
+    margin-bottom: 40px;
+}
+
+.facilities-list-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.facilities-list-item ion-icon {
+    font-size: 23px;
+}
+
+.facilities-list-item p {
+    width: calc(100% - 28px);
+}
+
+.facilities-wrapper:last-child {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+
+/**
+     * responsive for larger than 992px screen
+     */
+
+@media (min-width: 992px) {
+
+
+    .container1 {
+        max-width: 950px;
+    }
+
+    .section-text {
+        max-width: 450px;
+    }
+
+    .about .container1 {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .about-content {
+        margin-bottom: 0;
+        width: 40%;
+    }
+
+    .about-list {
+        gap: 30px;
+        padding-bottom: 50px;
+    }
+
+    .about-list li:nth-child(odd) {
+        transform: translateY(50px);
+    }
+
+    .facilities-wrapper {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 90px;
+    }
+
+    .facilities-wrapper:not(:last-child) {
+        margin-bottom: 100px;
+    }
+
+    .facilities-wrapper:last-child .facilities-banner {
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+
+    }
+
+    .AboutProducts-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .AboutProducts .section-text {
+        margin-bottom: 50px;
+    }
+
+}
+
+
+
+/* Responsive for larger than 1200px screen */
+
+
+@media (min-width: 1200px) {
+    .container1 {
+        max-width: 1150px;
+    }
+
+}
